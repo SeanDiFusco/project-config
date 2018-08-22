@@ -12,6 +12,7 @@ spring:
           url: "jdbc:mysql://localhost:3306/shoppingcartdb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
           username: "root"
           password: ""
+
       
 security:
   basic:
