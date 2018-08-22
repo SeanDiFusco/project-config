@@ -6,14 +6,12 @@ spring:
     properties:
       hibernate:
         dialect: "org.hibernate.dialect.MySQL5Dialect"
-  database:
-     driverClassName: "com.mysql.jdbc.Driver"
+      database:
+         driverClassName: "com.mysql.jdbc.Driver"
   datasource:
-      url: "jdbc:mysql://localhost:3306/shoppingcartdatabase?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
-      username: "root"
-      password: ""
-      testWhileIdle: "true"
-      validationQuery: "SELECT 1"
+          url: "jdbc:mysql://localhost:3306/shoppingcartdb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
+          username: "root"
+          password: ""
       
 security:
   basic:
@@ -29,7 +27,7 @@ eureka:
      registerWithEureka: true
      fetchRegistry: true
      serviceUrl:
-        defaultZone: http://localhost:8761/eureka/	
+        defaultZone: http://localhost:8761/eureka/  
 
 logging:
   level:
