@@ -9,7 +9,7 @@ spring:
       database:
          driverClassName: "com.mysql.jdbc.Driver"
   datasource:
-          url: "jdbc:mysql://localhost:3306/shoppingcartdb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
+          url: "jdbc:mysql://localhost:3306/productdb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
           username: "root"
           password: ""
 
@@ -19,7 +19,7 @@ security:
     enabled: false
     
 server:
-  port: 8082
+  port: 8083
 
 eureka:
   instance:
@@ -34,7 +34,7 @@ logging:
   level:
     com.netflix: WARN
     org.springframework.web: WARN
-    com.itemsharing: DEBUG
+    org.project.productservice DEBUG
 
 endpoints:
       metrics:
